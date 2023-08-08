@@ -1,0 +1,31 @@
+.nav-container {
+    grid-area: sidebar;
+}
+
+#tags-title, #categories-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-weight: 300;
+}
+
+#tag-list, #categories-list {
+    list-style: none;
+}
+
+#tag-list li, #categories-list li {
+    margin-bottom: 10px;
+
+}
+
+#tag-list a, #categories-list a {
+    color: #666;
+    transition: .3s;    
+}
+
+#tag-list a:hover, #categories-list a:hover {
+    color: #000;    
+}

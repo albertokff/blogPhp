@@ -1,5 +1,6 @@
 <?php
     include_once("templates/header.php");
+    
 
     if (isset($_GET['id'])) {
         $postId = $_GET['id'];
@@ -14,6 +15,8 @@
     }
 
 ?>
+    <link rel="stylesheet" href="<?= $BASE_URL ?>/css/post.css">
+    <link rel="stylesheet" href="<?= $BASE_URL ?>/css/aside.css">
     <main id="post-container">
         <div class="content-container">
             <h1 id="main-title"><?= $currentPost['title'] ?></h1>
@@ -27,8 +30,7 @@
             Vero recusandae repellat magni, ipsam nostrum sed commodi corporis esse fugiat in sit minima quos, illo temporibus. Eveniet maiores iure deleniti deserunt iusto dolores nesciunt quidem omnis. Sint, debitis quisquam.
             Fugiat delectus consequatur exercitationem esse, quidem dolorem suscipit doloribus harum voluptate libero labore officiis quis provident vero, cum quod iste. Alias pariatur animi veritatis. Neque dolorem quam voluptatum voluptas quos.</p>
         </div>
-    </main>
-    <aside id="nav-container">
+        <aside id="nav-container">
         <h3 id="tags-title">Tags</h3>
         <ul id="tag-list">
             <?php foreach($currentPost['tags'] as $tag): ?>
@@ -41,7 +43,8 @@
                 <li><a href="#"><?= $category ?></a></li>
             <?php endforeach; ?>
         </ul>
-    </aside>
+        </aside>
+    </main>    
 <?php
     include_once("templates/footer.php");
 ?>
