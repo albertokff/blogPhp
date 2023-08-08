@@ -1,7 +1,15 @@
 * {
     font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*Deixa todos os elementos com os limites das bordas corretos*/
 }
 
-body {
-    background-color: #ccc;
+html {
+    min-height: 100vh; /*Deixa o rodapé sempre embaixo, o vh indica toda a altura visível do navegador*/
+    position: relative;
+}
+
+main {
+    margin-bottom: 250px; /*Espaçamento entre conteúdo e rodapé do site*/
 }
