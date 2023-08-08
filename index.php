@@ -2,7 +2,8 @@
     include_once("templates/header.php");    
 ?>
     <main>
-        <link rel="stylesheet" href="<?= $BASE_URL ?>/css/home.css">        
+        <link rel="stylesheet" href="<?= $BASE_URL ?>/css/style.css">
+        <link rel="stylesheet" href="<?= $BASE_URL ?>/css/header.css">        
         <div id="title-container">
             <h1>Blog Strella</h1>
             <p>O seu blog de programação!</p>

@@ -16,7 +16,9 @@
 
 ?>
     <link rel="stylesheet" href="<?= $BASE_URL ?>/css/post.css">
-    <link rel="stylesheet" href="<?= $BASE_URL ?>/css/aside.css">
+    <link rel="stylesheet" href="<?= $BASE_URL ?>/css/aside.css">    
+    <link rel="stylesheet" href="<?= $BASE_URL ?>/css/style.css">    
+    
     <main id="post-container">
         <div class="content-container">
             <h1 id="main-title"><?= $currentPost['title'] ?></h1>
